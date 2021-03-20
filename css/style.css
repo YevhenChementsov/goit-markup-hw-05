@@ -631,9 +631,9 @@ img {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  transition-property: transform;
-  transition-duration: 1250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) rotate(360deg);
 }
 .modal {
   position: absolute;
@@ -646,6 +646,9 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition-property: transform;
+  transition-duration: 1250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   position: absolute;
@@ -670,6 +673,5 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: rotate(360deg);
 }
 /* ===============  END MODAL WINDOW  =============== */
